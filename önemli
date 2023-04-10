@@ -1,0 +1,5 @@
+sanatçı tokeni için: https://api.spotify.com/v1/search?q=taylorswift&type=artist
+her istekte eklenecek: const headers = {
+Authorization:
+"Bearer BQAnaYFw16XDBUPBpbz0uQXG2Fxy2vpW1jtvrEI89FN3Vr5cs1sxsB7zfmv4B7xhotA5dscmhDqzERqNsuVJV*JP1AQmJBtNet3ofmCNb57mWK8xCkJ*",
+};
