@@ -19,13 +19,16 @@ export default function SearchPage() {
     "https://api.spotify.com/v1/users/noq9tilk2zjs9u9omj2wgefyj/playlists?limit=10";
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     getPlaylist();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [authorization]);
   useEffect(() => {
     getInfo(url, authorization);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputValue]);
 
   function handleChangeInput(e) {

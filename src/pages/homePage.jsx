@@ -14,12 +14,14 @@ export default function HomePage() {
 
   useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (authorization) {
       getAlbums();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [authorization]);
 
   const getAlbums = async () => {

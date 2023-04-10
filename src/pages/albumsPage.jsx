@@ -25,6 +25,7 @@ export default function AlbumsPage() {
   }
   useEffect(() => {
     islem();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id, authorization]);
 
   function handleAddList(item) {
