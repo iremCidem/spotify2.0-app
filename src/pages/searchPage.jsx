@@ -26,6 +26,7 @@ export default function SearchPage() {
     getPlaylist();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [authorization]);
+
   useEffect(() => {
     getInfo(url, authorization);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -70,7 +71,7 @@ export default function SearchPage() {
               style={{ border: "none", margin: "15px", textDecoration: "none" }}
             >
               <Card
-                style={{ width: 240 }}
+                style={{ width: "220px" }}
                 hoverable
                 cover={
                   <img
@@ -91,9 +92,7 @@ export default function SearchPage() {
         ) : playlist ? (
           <Row gutter={16}>
             <div>
-              <Title className="text-gradient" style={{ width: "100vw" }}>
-                My Playlists
-              </Title>{" "}
+              <Title className="text-gradient">My Playlists</Title>{" "}
             </div>
             {playlist.map((item) => {
               return (
